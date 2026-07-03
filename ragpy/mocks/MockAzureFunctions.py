@@ -9,10 +9,10 @@ Created on Sat Jun 27 20:06:40 2026
 
 def FakeEmbed(text):
     # Deterministic fake embedding
-    return [0.1, 0.2, 0.3]
+    return [0.0] * 3072
 
 def FakeEmbedChunks(chunks):
-    return [[0.1, 0.2, 0.3] for _ in chunks]
+    return [[0.0] * 3072 for _ in chunks]
 
 def FakeChat(prompt):
     return "Mocked answer for testing."

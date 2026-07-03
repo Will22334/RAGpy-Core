@@ -10,7 +10,7 @@ it then queries the database with example text which is related. the database sh
 
 from ragpy.VectorDatabase import OpenDatabase, AddToDatabase
 from ragpy.DatabaseRetriever import RetrieveTopK
-from tests.MockAzureFunctions import FakeEmbed
+from ragpy.mocks.MockAzureFunctions import FakeEmbed
 
 def test_retrieval():
     OpenDatabase("TestDB", "./test_vectorDB")

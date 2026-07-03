@@ -8,7 +8,7 @@ This ensures that the compression pipeline can return the proper context.
 """
 
 from ragpy import ChunkCompressor as CC
-from tests.MockAzureFunctions import FakeCompress
+from ragpy.mocks.MockAzureFunctions import FakeCompress
 
 def test_compression(monkeypatch):
     chunks = [

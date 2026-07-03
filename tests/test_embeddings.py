@@ -8,9 +8,10 @@ Created on Sat Jun 27 19:46:21 2026
 """
 
 from ragpy import AzureOpenAIRelay as AI
-from tests.MockAzureFunctions import FakeEmbed
+from ragpy.mocks.MockAzureFunctions import FakeEmbed
 
 def test_embed_text(monkeypatch):
     monkeypatch.setattr(AI, "EmbedText", FakeEmbed)
     vec = AI.EmbedText("hello world")
-    assert vec == [0.1, 0.2, 0.3]
+    
+    assert all(v == 0.0 for v in vec)

@@ -10,7 +10,7 @@ text into the database. It then queriest the database and ensures that an answer
 
 from ragpy.RAGOrchestrator import IngestFile, GenerateAnswer
 from ragpy.VectorDatabase import OpenDatabase
-from tests.MockAzureFunctions import FakeEmbed, FakeEmbedChunks, FakeChat, FakeCompress, FakeReranker
+from ragpy.mocks.MockAzureFunctions import FakeEmbed, FakeEmbedChunks, FakeChat, FakeCompress, FakeReranker
 from ragpy import AzureOpenAIRelay as AI
 from ragpy import Reranker as RR
 from ragpy import ChunkCompressor as CC
@@ -31,6 +31,6 @@ def test_orchestrator(monkeypatch):
 
     IngestFile("test_doc.txt", "TestDB")
 
-    answer = GenerateAnswer("What is vibration analysis?", "TestDB")
+    answer = GenerateAnswer("What is vibration analysis?")
 
     assert answer == "Mocked answer for testing."

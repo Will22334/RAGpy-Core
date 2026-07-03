@@ -8,14 +8,14 @@ Validates that ingestion of embedded text into the database is performing correc
 """
 
 from ragpy.VectorDatabase import OpenDatabase, AddToDatabase, CheckIfInDatabase
-from tests.MockAzureFunctions import FakeEmbed
 
 def test_vector_database():
     OpenDatabase("TestDB", "./test_vectorDB")
 
     chunks = ["chunk one", "chunk two"]
-    vectors = [FakeEmbed(c) for c in chunks]
+    vectors = [[0.0] * 3072, [0.0] * 3072]
 
     AddToDatabase(chunks, vectors, "test_source")
 
     assert CheckIfInDatabase("test_source") is True
+    

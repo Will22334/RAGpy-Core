@@ -9,7 +9,7 @@ moves to index 0.
 """
 
 from ragpy.Reranker import Rerank
-from tests.MockAzureFunctions import FakeReranker
+from ragpy.mocks.MockAzureFunctions import FakeReranker
 
 def test_reranker(monkeypatch):
     chunks = [

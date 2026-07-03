@@ -32,7 +32,6 @@ import ragpy.AzureOpenAIRelay as AI
 import ragpy.Reranker as RR
 import ragpy.DatabaseRetriever as DR
 import ragpy.ChunkCompressor as CC
-import MockAzureFunctions as MF
 
 logger = logging.getLogger(__name__)
 
