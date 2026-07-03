@@ -1,0 +1,6 @@
+
+	What excites me most about AI is how it can turn a massive pile of documents into something you can have a conversation with. With RAG, the AI is grounded in real sources, and I find that genuinely exciting. I built a Python library called RAGpy specifically to make the development process of RAG easier, automating the process of setting up the RAG pipeline. It connects a large language model to your own set of documents and answers questions using your actual data instead of just guessing.
+Benefits
+	Industries across the board are finding real, measurable value in AI. In healthcare, AI could help clinicians quickly surface relevant research or patient history without digging through records manually. In legal and finance, AI tools could reduce the time spent on document review and compliance checks. RAG-based systems are valuable because they reduce hallucination; that is, cases where AI makes up information by anchoring responses to verified documents. Tools like RAGpy help developers build these kinds of trustworthy AI systems without needing to be machine learning experts, which lowers the barrier to entry and speeds up adoption.
+
+

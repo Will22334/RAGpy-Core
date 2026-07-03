@@ -1,0 +1,5 @@
+recursive-include ragpy *.py
+recursive-include ragpy/loaders *.py
+recursive-include ragpy/utils *.py
+recursive-include ragpy/batching *.py
+recursive-include examples *.py
